@@ -1,0 +1,9 @@
+#routes {
+    display:block;
+}
+
+.containRoutes {
+    display:flex;
+    justify-content: space-around;
+}
+

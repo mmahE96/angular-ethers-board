@@ -1,0 +1,12 @@
+.blockContain{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blockSingle {
+   padding: 20px;
+    background-color: #eff6ff;
+    border-radius: 3%;
+    
+}
