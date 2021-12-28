@@ -1,106 +1,74 @@
 <p>block works!</p>
 
 <div class="blockContain">
-
-    <div class="blockSingle">
-
-        Current Block Number:
-        <br />
-
-        93850923503
-    </div>
-
-    <div class="blockSingle">
-        Block data:
-
-        <br />
-    difficulty: {{difficulty}}
+  <div class="blockSingle">
+    Current Block Number:
     <br />
-    hash: {{hash}}
-    <br />
-    miner: {{miner}}
-    <br />
-    nonce: {{nonce}}
-    <br />
-    number: {{number}}
-    <br />
-    parentHash:{{parentHash}}
-    <br />
-    timestamp: {{timestamp}}
-    <br />
-    <button (click)="getBlock()">
-      Get Data
-    </button>
-    </div>
 
-    
+   {{blockNumber}}
+   <br />
+    <button (click)="getBlockNumber()">Get block number</button>
+  </div>
 
-    
+  <div class="blockSingle">
+    Block data:
 
-    
+    <br />
+    difficulty: {{ difficulty }}
+    <br />
+    hash: {{ hash }}
+    <br />
+    miner: {{ miner }}
+    <br />
+    nonce: {{ nonce }}
+    <br />
+    number: {{ number }}
+    <br />
+    parentHash:{{ parentHash }}
+    <br />
+    timestamp: {{ timestamp }}
+    <br />
+    <button (click)="getBlock()">Get Data</button>
+  </div>
 
-    <div class="blockSingle">
+  <div class="blockSingle">
+    Balance:
 
-        Balance:
-    
+    <br />
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <label>
+        Address:
+
+        <input ngModel name="addressName" />
+      </label>
+
       <br />
-      <form >
-        <label>
-          Address:
-          <input
-            
-          />
-        </label>
-      </form>
-      <br />
-      <button
-        
-      >
-        Get Data
-      </button>
-      <br />
-      balance of this address is:
-      
+      <button>Get Data</button>
+    </form>
+    <br />
+    balance of this address is:
+    {{ balance }}
+  </div>
+
+  <div class="blockSingle">
+    Transaction count:
+
+    <br />
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <label>
+        Address:
+        <input ngModel name="addressNameCount"/>
+      </label>
     
-    </div>
+    <br />
+    <button>Get Data</button>
+</form>
+    <br />
+    transaction count of this address is:
+    {{transactionCount}}
+  </div>
 
-    <div class="blockSingle">
+  <div class="blockSingle">Current block number</div>
 
-        Transaction count:
-    
-      <br />
-      <form >
-        <label>
-          Address:
-          <input
-            
-          />
-        </label>
-      </form>
-      <br />
-      <button
-        
-      >
-        Get Data
-      </button>
-      <br />
-      transaction count of this address is:
-      
-    </div>
-   
-
-    <div class="blockSingle">
-
-Current block number
-    </div>
-
-    <div class="blockSingle">
-
-Balance of account
-    </div>
-
-
-
-
-
+  <div class="blockSingle">Balance of account</div>
 </div>
