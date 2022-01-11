@@ -1,1 +1,46 @@
-<p>send-ether works!</p>
+
+<div class="contract"> 
+    <div>
+    
+        <h1>Send ether</h1>
+    </div>
+    
+    <div class="main">
+        <div>
+           Send ether to:
+            <br />
+            Estimated gas Price: {{transactionPrice}}
+    
+            <form (ngSubmit)="onSubmit(f)"  #f="ngForm">
+                <label>
+                  Send to:
+          
+                  <input ngModel name="address" />
+                </label>
+
+                <label>
+                    Amount to send:
+            
+                    <input ngModel name="amount" />
+                  </label>
+          
+                <br />
+                <button>Send Ether</button>
+              </form>
+              <p class="response">
+    
+                  Response(error):{{transactionError}}
+                </p>
+              <br />
+              Response(success):
+              <br />
+              hash:{{hash}}<br />
+              from:{{from}}<br />
+              value: {{value}}<br />
+              nonce:{{nonce}}<br />
+             
+        </div>
+    
+        
+    </div>
+    </div>

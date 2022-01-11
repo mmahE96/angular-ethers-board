@@ -73,7 +73,7 @@ weight:{{userInfo.weight}}<br />
         <br />
         Estimated gas Price: {{rightsPrice}}
 
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <form (ngSubmit)="onSubmit(f); onDelegate(f);"  #f="ngForm">
             <label>
               Address:
       
@@ -96,7 +96,7 @@ weight:{{userInfo.weight}}<br />
         <br />
         Estimated gas Price: {{delegatePrice}}
 
-        <form (ngSubmit)="onDelegate(f)" #f="ngForm">
+        <form (ngSubmit)="onSubmit(f); onDelegate(f);"  #f="ngForm">
             <label>
               Address:
       
@@ -119,7 +119,7 @@ weight:{{userInfo.weight}}<br />
         <br />
         Estimated gas Price: {{votePrice}}
 
-        <form (ngSubmit)="onDelegate(f)" #f="ngForm">
+        <form (ngSubmit)="onSubmit(f); onDelegate(f);" #f="ngForm">
             <label>
               Address:
       
