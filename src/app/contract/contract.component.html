@@ -1,1 +1,47 @@
-<p>contract works!</p>
+
+<div class="contract"> 
+<div>
+
+    <h1>Interact with contract</h1>
+</div>
+
+<div class="main">
+    
+    <h3>Greeting contract </h3>
+    <br />
+  Fetched greeting: {{greeting}}
+   <br />
+    <button (click)="fetchGreeting()">Fetch Greeting</button>
+
+    <hr />
+   
+   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <label>
+      Set new greeting:
+
+      <input ngModel name="setGreeting" />
+    </label>
+
+    <br />
+    <button>Change greeting</button>
+  </form>
+  Response:
+     <br />
+  data:{{data}}
+     <br />
+     from:{{from}}
+     <br />
+     hash:{{hash}}
+     <br />
+     nonce:{{nonce}}
+     <br />
+     confirmations:{{confirmations}}
+     <br />
+
+      
+
+
+
+
+</div>
+</div>
