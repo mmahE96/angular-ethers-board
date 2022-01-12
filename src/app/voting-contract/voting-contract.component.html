@@ -1,157 +1,18 @@
+<div class="container">
 
-<div class="contract"> 
-    <div>
-    
-        <h1>Interact with contract</h1>
-    </div>
-    
-    <div class="main">
-        <div>
-        <h3>Voting contract </h3>
-        <br />
-      Fetched candidates: 
-
-      <br />
-      Estimated gas price:{{candidatePrice}}
-      <br />
-      Candidate one : {{candidates.one}}
-      <br />
-      Candidate two : {{candidates.two}}
-       <br />
-        <button (click)="fetchCandidates()">Fetch Candidates</button>
-    
-        <hr />
-    </div>
-
-    <div>
-User Info:
-<br />
-Estimated gas Price: {{userInfoPrice}}
-<br />
-
-vote: {{userInfo.vote}}<br />
-delegate: {{userInfo.delegate}}<br />
-voted:  {{userInfo.voted}} <br />
-weight:{{userInfo.weight}}<br />
-
-<button (click)="getUserInfo()">Get User Info</button>
-<hr />
+    <div class="info">
+        <app-candidates></app-candidates>
+        <app-chairperson></app-chairperson>        
+        <app-user></app-user>
 
     </div>
 
-    <div>
-        Chairperson
-        <br />
-        Estimated gas Price: {{charipersonPrice}}
-        <br />        
-        <button (click)="checkChairperson()">Get chairperson</button>
-        <br />          
-        <p class="response">
-
-              Response(error):{{chairpersonError}}
-              <br />   
-              Response(success):{{chairperson}}
-            </p>         
-            <hr />
-          
-          <br />
+    <div class="actions">
+        <app-vote></app-vote>
+        <app-winner></app-winner>
     </div>
 
-    <div>
-        Winning Proposal:
-        <br />
-        Estimated gas Price: {{winningProposalPrice}}
-        <br />
-       Winning proposal is: {{winningProposal}}
-       <br />
-       <button (click)="fetchWinningProposal()"> Get Winning Porposal</button>
-       <hr />
-    </div>
+<app-rights></app-rights>
+<app-delegate></app-delegate>
 
-    <div>
-        Give rights to vote:
-        <br />
-        Estimated gas Price: {{rightsPrice}}
-
-        <form (ngSubmit)="onSubmit(f); onDelegate(f);"  #f="ngForm">
-            <label>
-              Address:
-      
-              <input ngModel name="addressTo" />
-            </label>
-      
-            <br />
-            <button>Give rights</button>
-          </form>
-          <p class="response">
-
-              Response(error):{{voteErorr}}
-            </p>
-          <br />
-          Response(success):{{rightsTo}}
-    </div>
-
-    <div>
-        Delegate your right to:
-        <br />
-        Estimated gas Price: {{delegatePrice}}
-
-        <form (ngSubmit)="onSubmit(f); onDelegate(f);"  #f="ngForm">
-            <label>
-              Address:
-      
-              <input ngModel name="addressDelegate" />
-            </label>
-      
-            <br />
-            <button>Delegate</button>
-          </form>
-          <p class="response">
-
-              Response(error):{{delegateError}}
-            </p>
-          <br />
-          Response(success):{{delegateTo}}
-    </div>
-
-    <div>
-        Vote for:
-        <br />
-        Estimated gas Price: {{votePrice}}
-
-        <form (ngSubmit)="onSubmit(f); onDelegate(f);" #f="ngForm">
-            <label>
-              Address:
-      
-              <input ngModel name="addressVote" />
-            </label>
-      
-            <br />
-            <button>Vote For</button>
-          </form>
-          <p class="response">
-
-              Response(error):{{voteError}}
-            </p>
-          <br />
-          Response(success):{{voteTo}}
-    </div>
-
-    <div>
-        Winner
-        <br />
-        Estimated gas Price: {{winnerPrice}}
-        <br />        
-        <button (click)="getWinnerName()">Get Winner</button>
-        <br />          
-        <p class="response">
-
-              Response(error):{{winnerError}}
-            </p>
-          <br />
-          Response(success):{{winner}}
-    </div>
-
-
-       
-    </div>
+</div>

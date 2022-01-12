@@ -10,6 +10,13 @@ import { BlockComponent } from './block/block.component';
 import { ContractComponent } from './contract/contract.component';
 import { SendEtherComponent } from './send-ether/send-ether.component';
 import { VotingContractComponent } from './voting-contract/voting-contract.component';
+import { CandidatesComponent } from './voting-contract/candidates/candidates.component';
+import { ChairpersonComponent } from './voting-contract/chairperson/chairperson.component';
+import { WinnerComponent } from './voting-contract/winner/winner.component';
+import { VoteComponent } from './voting-contract/vote/vote.component';
+import { RightsComponent } from './voting-contract/rights/rights.component';
+import { DelegateComponent } from './voting-contract/delegate/delegate.component';
+import { UserComponent } from './voting-contract/user/user.component';
 
 const appRoutes: Routes = [
   {path: 'home', component:HomeComponent},
@@ -28,7 +35,14 @@ const appRoutes: Routes = [
     BlockComponent,
     ContractComponent,
     SendEtherComponent,
-    VotingContractComponent,    
+    VotingContractComponent,
+    CandidatesComponent,
+    ChairpersonComponent,
+    WinnerComponent,
+    VoteComponent,
+    RightsComponent,
+    DelegateComponent,
+    UserComponent,    
   ],
   imports: [
     BrowserModule,

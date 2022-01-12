@@ -1,0 +1,19 @@
+<div class="componentAction">
+    Vote:
+    <br />
+    Estimated gas price: {{votePrice}}
+    <br />
+    {{voteTo}}
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label>
+          Address:
+  
+          <input ngModel name="addressVote" />
+        </label>
+  
+        <br />
+        <button>Vote for</button>
+      </form>
+
+</div>

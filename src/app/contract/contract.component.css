@@ -8,3 +8,9 @@
 h1 {
     margin-bottom: 20px;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+}

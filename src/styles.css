@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container {
+    min-width: 90%;
+    max-width: 95%;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 1px solid steelblue;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+   
+  }
+
+  .componentInfo {
+    border: 1px solid steelblue;
+    
+    min-height: 300px;
+
+  }
+
+  .componentAction {
+    border: 1px solid steelblue;
+    max-width: 90%;
+    min-width: 85%;
+    min-height: 300px;    
+
+  }
+
+  .info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 10%;
+  }
+
+  .actions {
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 10%;
+    align-items: center;
+    align-content: center;
+   
+
+
+  }
+
+  

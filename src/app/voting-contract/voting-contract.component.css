@@ -16,5 +16,8 @@ h1 {
 }
 
 .response {
-  
+    white-space: wrap; 
+    width: 500px; 
+    overflow: hidden;
+    text-overflow: clip;
 }

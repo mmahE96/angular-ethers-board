@@ -10,7 +10,7 @@ declare let window:any;
   styleUrls: ['./block.component.css']
 })
 export class BlockComponent {
-  public provider;
+    public provider;
     public block;
     public difficulty;
     public hash;
