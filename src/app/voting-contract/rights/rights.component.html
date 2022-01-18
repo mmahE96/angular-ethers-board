@@ -1,1 +1,22 @@
-<div class="component">Rights</div>
+<div class="componentAction">
+    Rights:
+    <br />
+    Estimated gas price: {{rightsPrice}}
+    <br />
+    {{rightsTo}}
+    <br />
+    {{rightsError}}
+
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label>
+          Enter candindate index:
+  
+          <input ngModel name="addressToVote" />
+        </label>
+  
+        <br />
+        <button>Rights for</button>
+      </form>
+
+</div>

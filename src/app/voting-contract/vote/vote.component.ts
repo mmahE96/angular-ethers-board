@@ -33,6 +33,7 @@ export class VoteComponent implements OnInit {
 
 
 async onSubmit(form: NgForm) {  
+  console.log(form.form.value.addressVote)
   await this.requestAccount()
   this.vote(form.form.value.addressVote)  
  
