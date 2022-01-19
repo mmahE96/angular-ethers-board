@@ -43,13 +43,16 @@ async onSubmit(form: NgForm) {
     
     const contract = await new ethers.Contract(contractAddress, Ballot.abi, this.signer)    
     
-    const votePrice = await contract.estimateGas.vote(address)            
-        const str = votePrice.toString()        
-        this.votePrice= str
+    
     
     try {
+      const votePrice = await contract.estimateGas.vote(address)            
+      const str = votePrice.toString()        
+      this.votePrice= str
+
         const vFor = await contract.vote(address)
-        this.voteTo = vFor    
+        this.voteTo = vFor 
+        console.log(vFor)   
       
     } catch (error) {
       console.log("Error: ", error)

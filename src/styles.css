@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files 
+
+primary: #365314 (darkest)900
+secondary: #65a30d (lighter) 600
+tertiary: #ecfccb (lightest) 100
+quad: #f7fee7 (almost white) 50
+
+
+
+
+*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +25,7 @@
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 1px solid steelblue;
+    border: 1px solid #365314;
     padding: 30px;
     border-radius: 5px;
     display: flex;
@@ -24,15 +34,20 @@
    
   }
 
+
+
   .componentInfo {
-    border: 1px solid steelblue;
-    
+    background-color: #f7fee7;
+    padding: 15px;
+    border-radius: 30px;    
     min-height: 300px;
 
   }
 
   .componentAction {
-    border: 1px solid steelblue;
+    background-color: #f7fee7;
+    padding: 15px;
+    border-radius: 30px;
     max-width: 90%;
     min-width: 85%;
     min-height: 300px;    
@@ -54,8 +69,12 @@
     margin-bottom: 10%;
     align-items: center;
     align-content: center;
-   
+  }
 
+  .btn {
+    color:#ecfccb ;
+    background-color: #365314;
+    
 
   }
 

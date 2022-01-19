@@ -3,7 +3,8 @@
     <br />
     Estimated gas price: {{votePrice}}
     <br />
-    {{voteTo}}
+    {{voteTo}} <br />
+    {{voteError}}
 
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <label>
@@ -13,7 +14,7 @@
         </label>
   
         <br />
-        <button>Vote for</button>
+        <button class="btn" >Vote for</button>
       </form>
 
 </div>

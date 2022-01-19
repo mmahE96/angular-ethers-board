@@ -1,1 +1,20 @@
-<div class="component">Delegate</div>
+<div class="componentAction">
+    Delegate:
+    <br />
+    Estimated gas price: {{delegatePrice}}
+    <br />
+    {{delegateTo}} <br />
+    {{delegateError}}
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label>
+          Delegate your rights to vote to:
+  
+          <input ngModel name="addressDelegate" />
+        </label>
+  
+        <br />
+        <button class="btn" >Vote for</button>
+      </form>
+
+</div>
