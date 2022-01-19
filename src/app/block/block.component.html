@@ -1,18 +1,20 @@
-<p>block works!</p>
+
 
 <div class="blockContain">
   <div class="blockSingle">
-    Current Block Number:
+   <h3> Current Block Number:</h3>
+   <p>
     <br />
 
    {{blockNumber}}
    <br />
-    <button (click)="getBlockNumber()">Get block number</button>
+  </p>
+    <button class="btn" (click)="getBlockNumber()">Get block number</button>
   </div>
 
   <div class="blockSingle">
-    Block data:
-
+   <h3> Block data:</h3>
+<p>
     <br />
     difficulty: {{ difficulty }}
     <br />
@@ -28,12 +30,13 @@
     <br />
     timestamp: {{ timestamp }}
     <br />
-    <button (click)="getBlock()">Get Data</button>
+  </p>
+    <button class="btn" (click)="getBlock()">Get Data</button>
   </div>
 
   <div class="blockSingle">
-    Balance:
-
+    <h3>Balance:</h3>
+  
     <br />
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
       <label>
@@ -43,15 +46,18 @@
       </label>
 
       <br />
-      <button>Get Data</button>
+     
+      <button class="btn" >Get Data</button>
     </form>
+    <p>
     <br />
     balance of this address is:
     {{ balance }}
+  </p>
   </div>
 
   <div class="blockSingle">
-    Transaction count:
+   <h3>Transaction count:</h3> 
 
     <br />
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
@@ -61,14 +67,14 @@
       </label>
     
     <br />
-    <button>Get Data</button>
+    <button class="btn" >Get Data</button>
 </form>
+<p>
     <br />
     transaction count of this address is:
     {{transactionCount}}
+  </p>
   </div>
 
-  <div class="blockSingle">Current block number</div>
-
-  <div class="blockSingle">Balance of account</div>
+  
 </div>

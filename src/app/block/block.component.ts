@@ -12,17 +12,17 @@ declare let window:any;
 export class BlockComponent {
     public provider;
     public block;
-    public difficulty;
-    public hash;
-    public miner;
-    public nonce;
-    public number;
-    public parentHash;
-    public timestamp;
+    public difficulty = "No data"
+    public hash = "No data" 
+    public miner = "No data"
+    public nonce = "No data"
+    public number = "No data"
+    public parentHash = "No data"
+    public timestamp = "No data"
     public balance;
     public address;
     public transactionCount;
-    public blockNumber;
+    public blockNumber = "No data"
  
   constructor(){
       this.provider = new ethers.providers.Web3Provider(window.ethereum);
