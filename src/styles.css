@@ -16,7 +16,7 @@ quad: #f7fee7 (almost white) 50
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   .container {
@@ -48,8 +48,7 @@ quad: #f7fee7 (almost white) 50
     background-color: #f7fee7;
     padding: 15px;
     border-radius: 30px;
-    max-width: 90%;
-    min-width: 85%;
+    width: 500px;
     min-height: 300px;    
 
   }

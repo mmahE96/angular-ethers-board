@@ -1,12 +1,15 @@
-<div class="componentInfo">User:
-    <br />
-    Active account address: {{accountAddress}}
+<div class="componentInfo">
+    
+    <h3>User:</h3>
+    <p>
+        Active account address: {{accountAddress}}
     <br />
     vote: {{userInfo.vote}}<br />
     delegate: {{userInfo.delegate}}<br />
     voted:  {{userInfo.voted}} <br />
     weight:{{userInfo.weight}}<br />
     <br />
+    </p>
 
 
     <button class="btn" (click)="getUser()">Get User Info</button>

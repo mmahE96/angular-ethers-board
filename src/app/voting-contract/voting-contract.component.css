@@ -7,11 +7,14 @@
 
 h1 {
     margin-bottom: 20px;
+    
+    
 }
 
 .main {
     display: flex;
     flex-direction: column;
+    
     
 }
 
@@ -20,4 +23,6 @@ h1 {
     width: 500px; 
     overflow: hidden;
     text-overflow: clip;
+    
+
 }

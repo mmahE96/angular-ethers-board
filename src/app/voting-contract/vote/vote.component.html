@@ -1,19 +1,22 @@
 <div class="componentAction">
-    Vote:
+    <h3>Vote:</h3>
+    <p>
     <br />
     Estimated gas price: {{votePrice}}
     <br />
     {{voteTo}} <br />
     {{voteError}}
+  </p>
 
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <label>
-          Enter candindate index:
+         <p> Enter candindate index:</p>
   
           <input ngModel name="addressVote" />
         </label>
   
         <br />
+      
         <button class="btn" >Vote for</button>
       </form>
 
