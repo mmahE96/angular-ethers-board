@@ -33,12 +33,12 @@ export class NftHomeComponent {
     const data = await marketContract.fetchMarketItems()  
     
     const items = await Promise.all(data.map(async i => {
-        const tokenUri = await tokenContract.tokenURI(i.tokenId) 
+        const tokenUri = await tokenContract.tokenURI(i.itemId) 
         const meta = await axios.get(tokenUri)
         let price = ethers.utils.formatUnits(i.price.toString(), "ether")
         let item = {
             price,
-            tokenId: i.tokenId.toNumber(),
+            itemId: i.itemId.toNumber(),
             seller: i.seller,
             owner: i.owner,
             sold: i.sold,
@@ -58,7 +58,7 @@ export class NftHomeComponent {
   }
 
   async buyNft(nft) {    
-    console.log("Clicked") 
+    console.log(nft.price) 
         
         
         const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -71,8 +71,9 @@ export class NftHomeComponent {
 
     
        console.log(price)
+       console.log(nft.itemId)
   
-        const transaction = await contract.createMarketSale(nftaddress, nft.tokenId ,{ value: price})
+        const transaction = await contract.createMarketSale(nftaddress, nft.itemId ,{ value: price})
         
         await transaction.wait()
         this.loadNFTs()
