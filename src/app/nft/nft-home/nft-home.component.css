@@ -1,15 +1,43 @@
 .nfts{
-    display:flex;
     
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background-color: #fef2f2;
     margin-top: 40px;
-    
-    
-
-
+    border-radius: 1%;
 }
 
 .nft {
-    border: solid blue;
+    display: flex;
+    justify-content: start;  
+    align-items: center;
+   flex-direction: column;
+   
+    width: 400px;
+    height: 600px;
+
 }
+
+.data {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nftImage {
+width: 300px;
+height: 250px;
+border-radius: 2%;
+
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+    background-color: #7f1d1d;
+    color: #fef2f2;
+}
+

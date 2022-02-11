@@ -1,15 +1,20 @@
 <app-nft></app-nft>
+<div class="main">
 <div *ngFor="let item of items" class="nfts">
     <div class="nft">
-        <h3>NFT {{item.itemId}} </h3>
-   <p>Name: {{item.name}}</p> 
-    <p>Description: {{item.description}}</p> 
-    <p>Image: <img src={{item.image}}></p> 
-    <p>Owner: {{item.owner}}</p> 
-    <p>Price: {{item.price}}</p> 
-    <p>Seller: {{item.seller}}</p> 
-    <p>Sold: {{item.sold}}</p> 
-    <button (click)="buyNft(item)">Buy NFT</button>
+        <h3>{{item.name}}</h3>
+   
+    
+    <div><img src={{item.image}} class="nftImage"></div> 
+    <div class="data">
+    <div>Description: {{item.description}}</div> 
+    <div>Owner: {{item.owner}}</div> 
+    <div>Price: {{item.price}}</div> 
+    <div>Seller: {{item.seller}}</div> 
+    <div>Sold: {{item.sold}}</div> 
+</div>
+    <button class="btn" (click)="buyNft(item)">Buy NFT</button>
+</div>
 </div>
 </div>
 

@@ -1,6 +1,6 @@
 #routes {
     display:block;
-    color: #365314 ;
+    color: #fef2f2 ;
     font-size: larger;
     font-weight: 900;
 }
@@ -8,5 +8,7 @@
 .containRoutes {
     display:flex;
     justify-content: space-around;
+    background-color:  #7f1d1d;
+    padding: 15px;
 }
 
