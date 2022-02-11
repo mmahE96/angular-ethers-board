@@ -26,7 +26,7 @@ export class DashboardComponent {
     sold:"",
 }
 
-public items = []
+public itemsCreated = []
 
 public soldItems = []
 
@@ -60,12 +60,14 @@ public soldItems = []
         sold: i.sold,
         image: meta.data.image,
       }
-      this.items.push(this.item)
+      this.itemsCreated.push(this.item)
       return 
     }))
     /* create a filtered array of items that have been sold */
-    this.soldItems.push(this.items.filter(i => i.sold))
-    console.log(this.items.filter(i => i.sold))
+    this.soldItems = this.itemsCreated.filter(i => i.sold == true)
+   
+    console.log(this.itemsCreated)
+    console.log(this.soldItems)
    
   }
 }
