@@ -5,7 +5,9 @@ secondary: #65a30d (lighter) 600
 tertiary: #ecfccb (lightest) 100
 quad: #f7fee7 (almost white) 50
 
+#7f1d1d; dark red
 
+#fef2f2 light red
 
 
 */
@@ -25,9 +27,9 @@ quad: #f7fee7 (almost white) 50
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 1px solid #365314;
+    border: 1px solid #7f1d1d;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 2%;
     display: flex;
     gap: 15px;
     
@@ -39,18 +41,18 @@ quad: #f7fee7 (almost white) 50
  
 
   .componentInfo {
-    background-color: #f7fee7;
+    background-color: #fef2f2;
     padding: 15px;
-    border-radius: 30px;    
+    border-radius: 2%;    
     min-height: 300px;
     
 
   }
 
   .componentAction {
-    background-color: #f7fee7;
+    background-color: #fef2f2;
     padding: 15px;
-    border-radius: 30px;
+    border-radius: 2%;
     width: 500px;
     min-height: 300px;    
 
@@ -74,8 +76,8 @@ quad: #f7fee7 (almost white) 50
   }
 
   .btn {
-    color:#ecfccb ;
-    background-color: #365314;
+    color:#fef2f2 ;
+    background-color: #7f1d1d;
     
 
   }

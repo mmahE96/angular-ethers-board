@@ -12,5 +12,35 @@ h1 {
 .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #fef2f2;
+    border-radius: 2%;
+    margin-top: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: larger;
     
 }
+
+.setGree {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.fetch{
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+.fetchB {
+    margin-top: 20px;
+}
+
+
+
+
+
+

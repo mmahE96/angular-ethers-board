@@ -12,5 +12,15 @@ h1 {
 .main {
     display: flex;
     flex-direction: column;
+    background-color: #fef2f2;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 2%;
+    font-weight: bolder;
+    font-size: larger;
     
+}
+
+.inpOne {
+    margin-left: 67px
 }

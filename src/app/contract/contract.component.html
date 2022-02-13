@@ -3,16 +3,19 @@
 
 
 <div class="main">
+  <div class="fetch">
     
-    <h3>Greeting contract </h3>
+    <h1>Greeting contract </h1>
     <br />
   Fetched greeting: {{greeting}}
    <br />
-    <button (click)="fetchGreeting()">Fetch Greeting</button>
-
+    <button class="btn fetchB" (click)="fetchGreeting()">Fetch Greeting</button>
+  </div>
     <hr />
-   
+   <div class="form">
+     
    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="setGree">
     <label>
       Set new greeting:
 
@@ -20,7 +23,8 @@
     </label>
 
     <br />
-    <button>Change greeting</button>
+    <button class="btn">Change greeting</button>
+  </div>
   </form>
   Response:
      <br />
@@ -34,11 +38,6 @@
      <br />
      confirmations:{{confirmations}}
      <br />
-
-      
-
-
-
-
+</div>
 </div>
 </div>

@@ -1,5 +1,9 @@
 
+<div class="main">
 
-<div>{{getNetwork()}}</div>
-  <button (click)="getNetworkName()">Get network</button>
-  <p>{{networkResolved}}</p>
+
+  <div>Network name: {{networkResolved}}</div> 
+  <div>Connecting with: {{getNetwork()}} </div><br />
+  
+  <button (click)="getNetworkName()" class="btn">Get network</button>
+</div>
