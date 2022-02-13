@@ -1,39 +1,43 @@
 <app-nft></app-nft>
-<p>dashboard works!</p>
-<h3>Sold items: </h3>
 
-<div  *ngFor="let soldItem of soldItems">
+<h3>Sold items: </h3>
+<div class="main">
+<div  *ngFor="let soldItem of soldItems" class="nfts">
     
     <div class="nft">
-        <h3>NFT {{soldItem.tokenId}} </h3>
-   <p>Seller: {{soldItem.seller}}</p> 
+        <h3>NFT {{soldItem.tokenId}} </h3>  
    
-    <p>Image: <img src={{soldItem.image}} height="150px" width="150px"></p> 
+    <p><img src={{soldItem.image}} height="150px" width="150px"></p> 
+    <div class="data">
+    <p>Seller: {{soldItem.seller}}</p> 
     <p>Owner: {{soldItem.owner}}</p> 
     <p>Price: {{soldItem.price}}</p> 
     <p>Sold: {{soldItem.sold}}</p> 
+    </div>
     
 </div>
 
 
+</div>
 </div>
 
 
 <h3>Items created:</h3>
+<div class="main">
 <div *ngFor="let sing of itemsCreated" class="nfts">
     <div class="nft">
         <h3>NFT {{sing.tokenId}} </h3>
-   <p>Seller: {{sing.seller}}</p> 
    
-    <p>Image: <img src={{sing.image}} height="150px" width="150px"></p> 
+   
+    <p><img src={{sing.image}} height="150px" width="150px" class="nftImage"></p> 
+    <div class="data">
+    <p>Seller: {{sing.seller}}</p> 
     <p>Owner: {{sing.owner}}</p> 
     <p>Price: {{sing.price}}</p> 
     <p>Sold: {{sing.sold}}</p> 
-    
 </div>
-
-
-    
+</div>  
     
 
+</div>
 </div>

@@ -1,16 +1,17 @@
 <app-nft></app-nft>
-<p>my-assets works!</p>
 
+<div class="main">
 <div *ngFor="let sing of items" class="nfts">
     <div class="nft">
         <h3>NFT {{sing.tokenId}} </h3>
-   <p>Seller: {{sing.seller}}</p> 
-   
-    <p>Image: <img src={{sing.image}} height="150px" width="150px"></p> 
+        <p> <img src={{sing.image}} height="150px" width="150px" class="nftImage"></p> 
+        <div class="data">
+   <p>Seller: {{sing.seller}}</p>     
     <p>Owner: {{sing.owner}}</p> 
     <p>Price: {{sing.price}}</p> 
+</div>
     
-    
+</div>
 </div>
 
 

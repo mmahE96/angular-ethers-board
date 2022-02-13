@@ -1,0 +1,67 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fef2f2;
+    margin-top: 40px;
+    border-radius: 3%;
+    width: 500px;
+    height: 400px;        
+}
+.title {
+    margin-top: -25px;
+}
+
+.inpOne {
+    margin-left: 53px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5%;
+
+}
+
+.inpTwo {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5%;
+
+}
+
+.inpThree{
+    margin-left: 57px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5%;
+
+}
+
+.files {
+    
+    padding: 5px;
+    border-radius: 5%;
+
+}
+
+.btn {
+    background-color: #7f1d1d;
+    color: #fef2f2;
+    margin-left: 35%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.text {
+    font-size: larger;
+    font-weight: bolder;
+}
+

@@ -12,19 +12,22 @@
    flex-direction: column;
    
     width: 400px;
-    height: 600px;
+    height: 550px;
 
 }
 
 .data {
     margin-top: 10px;
     margin-left: 10px;
+    font-weight: 500;
+    
 }
 
 .nftImage {
 width: 300px;
 height: 250px;
 border-radius: 2%;
+
 
 
 }
@@ -39,5 +42,6 @@ border-radius: 2%;
 .btn {
     background-color: #7f1d1d;
     color: #fef2f2;
+    margin-top: 20px;
 }
 

@@ -1,13 +1,21 @@
 <app-nft></app-nft>
-<p>sell-digital works!</p>
+
+<div class="main">
+    
+    
+<div class="form">
+    <h1 class="title">Create new NFT</h1>
 <form (ngSubmit)="onSubmit(f)" #f="ngForm" >
-<label for="name" >Enter NFT name:</label>
-<input ngModel name="nftname" placeholder="Enter the name" value="" id="name"/><br />
-<label for="description" >Enter NFT description:</label>
-<input ngModel name="description" placeholder="Enter the description" value="" id="description"/><br />
-<label for="price" >Enter NFT price:</label>
-<input ngModel name="price" placeholder="Enter the price" value="" id="price"/><br />
-<input ngModel name="image" type="file" id="myFile" (input)="onImage($event)" ><br />
-<button type="submit" >Create NFT</button><br />
+   
+<label for="name" class="text" >Enter NFT name:</label>
+<input ngModel name="nftname" placeholder="Enter the name" value="" id="name" class="inpOne"/><br />
+<label class="text" for="description" >Enter NFT description:</label>
+<input ngModel name="description" placeholder="Enter the description" value="" id="description" class="inpTwo"/><br />
+<label class="text" for="price" >Enter NFT price:</label>
+<input ngModel name="price" placeholder="Enter the price" value="" id="price" class="inpThree"/><br />
+<input class="files" ngModel name="image" type="file" id="myFile" (input)="onImage($event)" ><br />
+<button class="btn" type="submit" >Create NFT</button><br />
 </form>
+</div>
+</div>
 
